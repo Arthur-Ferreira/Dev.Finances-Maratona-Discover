@@ -1,0 +1,178 @@
+/* Variables */
+:root {
+    --first-background: #F0F2F5;
+    --second-background: #2D4A22;
+    --shape-background: #49AA26;
+    
+    --shape-principal: #FFFFFF;
+    --titles: #363F5F;
+    --texts: #969CB2;
+
+    --numb-decoration-green: #49AA26;
+    --numb-decoration-red: #E92929;
+
+    --default-font: 'Poppins';
+}
+
+/* Variables */
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: var(--first-background);
+
+    font-family: var(--default-font), 'sans-serif';
+}
+
+/* Container */
+.container {
+    width: min(90vw, 800px);
+
+    margin: auto;
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    
+    color: var(--titles);
+    font-weight: normal;
+}
+
+/* General */
+
+
+/* Header */
+header {
+    text-align: center;
+
+    background-color: var(--second-background);
+    padding: 2rem 0 10rem;
+}
+
+#logo {
+    color: var(--shape-principal);
+    
+    font-weight: 100;
+}
+
+/* Header */
+
+/* Balance */
+
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2{
+    color: var(--shape-principal);
+    margin-top: 0;
+}
+
+/* Balance */
+
+/* Cards */
+
+.cards {
+    background-color: var(--shape-principal);
+    color: var(--titles);
+
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+
+    border-radius: 0.25rem;
+}
+
+.cards h3{
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.cards p{
+    font-size: 2rem;
+    line-height: 3rem;
+    
+    margin-top: 1rem;
+}
+
+.cards.total{
+    background-color: var(--shape-background);
+
+    color: var(--shape-principal);
+}
+
+/* Cards */
+
+/* Table */
+
+#data-table {
+    width: 100%;
+
+    border-spacing: 0 0.5rem;
+
+    color: var(--texts);    
+}
+
+
+table thead th {
+    background-color: var(--shape-principal);
+
+    font-weight: normal;
+    text-align: left;
+
+    padding: 1rem 2rem;
+}
+
+table tbody tr {
+    opacity: 0.7;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table tbody td {
+    background-color: var(--shape-principal);
+    
+    padding: 1rem 2rem;
+}
+
+table thead th:first-child,
+table tbody td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+td.description {
+    color: var(--titles);
+}
+
+td.income {
+    color: var(--numb-decoration-green);
+    
+}
+
+td.expense {
+    color: var(--numb-decoration-red);
+}
+
+
+/* Table */
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: var(--titles);
+    opacity: 0.6;
+
+    padding: 4rem 0 2rem;
+}
+
+/* Footer */
