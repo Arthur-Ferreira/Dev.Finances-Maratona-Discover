@@ -11,6 +11,8 @@
     --numb-decoration-green: #49AA26;
     --numb-decoration-red: #E92929;
 
+    --button-color: #3dd705;
+
     --default-font: 'Poppins';
 }
 
@@ -24,6 +26,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 93.75%;
+}
+
 /* Body */
 body {
     background-color: var(--first-background);
@@ -31,12 +37,26 @@ body {
     font-family: var(--default-font), 'sans-serif';
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+} 
+
 /* Container */
 .container {
     width: min(90vw, 800px);
 
     margin: auto;
 }
+
 
 h2 {
     margin-top: 3.2rem;
@@ -84,15 +104,20 @@ header {
     background-color: var(--shape-principal);
     color: var(--titles);
 
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3.5rem;
     margin-bottom: 2rem;
-
     border-radius: 0.25rem;
+
 }
 
 .cards h3{
     font-weight: normal;
     font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .cards p{
@@ -110,7 +135,34 @@ header {
 
 /* Cards */
 
+/* Button */
+
+a {
+    color: var(--shape-background);
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: var(--button-color);
+     
+}
+
+.button.new {
+    margin-bottom: .8rem;
+
+    display: inline-block;
+}
+
+/* Button */
+
+
 /* Table */
+#transaction{
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+}
 
 #data-table {
     width: 100%;
@@ -149,6 +201,11 @@ table tbody td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
+table thead th:last-child,
+table tbody td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0 ;
+}
+
 td.description {
     color: var(--titles);
 }
@@ -176,3 +233,49 @@ footer {
 }
 
 /* Footer */
+
+/* RESPONSIVE */
+
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
