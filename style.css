@@ -143,9 +143,48 @@ a {
     
 }
 
+button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    color: var(--shape-principal);
+    background-color: var(--numb-decoration-green);
+
+    padding: 0;
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-color);
+}
+
+.button.cancel {
+    height: 50px;
+
+    color: var(--numb-decoration-red);
+
+    border: 2px var(--numb-decoration-red) solid;
+    border-radius: 0.25rem;
+    opacity: 0.6;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button.cancel:hover {
+    opacity: 1;
+}
+
+
 a:hover {
     color: var(--button-color);
-     
 }
 
 .button.new {
@@ -219,8 +258,86 @@ td.expense {
     color: var(--numb-decoration-red);
 }
 
-
 /* Table */
+
+
+
+/* Modal */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: var(--first-background);
+
+    padding: 2.4rem;
+
+    position: relative;
+}
+
+/* Modal */
+
+/* Form */
+
+.form {
+    max-width: 500px;
+
+}
+
+.form h2 {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+
+    padding: 0.8rem;
+
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+    width: 48%;
+}
+
+
+
+
+/* Form */
 
 /* Footer */
 
