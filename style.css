@@ -278,11 +278,14 @@ td.expense {
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 
 .modal-overlay.active{
     opacity: 1;
     visibility: visible;
+    
 }
 
 .modal {
@@ -291,6 +294,7 @@ td.expense {
     padding: 2.4rem;
 
     position: relative;
+    z-index: 1;
 }
 
 /* Modal */
@@ -320,6 +324,7 @@ input {
 }
 
 .input-group small {
+    color: var(--texts);
     opacity: 0.4;
 }
 
@@ -333,8 +338,6 @@ input {
 .input-group.actions button {
     width: 48%;
 }
-
-
 
 
 /* Form */
