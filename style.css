@@ -323,7 +323,7 @@ input {
     margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help {
     color: var(--texts);
     opacity: 0.4;
 }
